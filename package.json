@@ -1,0 +1,26 @@
+{
+  "name": "active_box_new",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSankevich/Activetotalnew.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JSankevich/Activetotalnew/issues"
+  },
+  "homepage": "https://github.com/JSankevich/Activetotalnew#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "parcel": "^2.6.2",
+    "sass": "^1.53.0"
+  }
+}
