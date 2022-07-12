@@ -20,7 +20,6 @@
    &:hover .works__info{
       opacity: 1;
       background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_1.png);
-   
       }
 
    &:active .works__info{
@@ -132,7 +131,7 @@
    height: 100%;
    opacity: 0;
    position: absolute;
-   transition: 2s ease-in-out;
+   transition: 0.5s ease-in-out;
 }
 .works__info-title{
    font-family: "Raleway",sans-serif;
