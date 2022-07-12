@@ -1,0 +1,109 @@
+@import url(./general.scss);
+
+#download{
+   width: 1170px;
+   height: 224px;
+   margin: 114px auto 0 auto;
+}
+
+.download__title{
+   font-family: "Raleway", sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 35px;
+   text-align: center;
+   color: #000000;
+   padding: 17.5px 0;
+}
+
+.download__text{
+   font-family: "Raleway", sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   color: #000000;
+   margin-top: 5.29px;
+}
+
+.download__button{
+   font-family: "Raleway", sans-serif;
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 28px;
+   text-align: center;
+   color: #FFFFFF;
+   width: 369px;
+   height: 77.58px;
+   background-color: rgba(255, 67, 67, 1);
+   border: none;
+   margin-top: 50.14px;
+   margin-left: 34.19%;
+}
+
+.download__button:hover{
+   background-color: rgba(231, 20, 20, 1);
+   transition: all 1s ease 0s;
+}
+
+.download__button:active{
+   background-color: #FF4343;
+   box-shadow: 4px 4px 30px #FF4343;
+   transition-duration: 0.1s;
+}
+
+@media (max-width: 1500px){
+   #download{
+      width: 984px;
+      height: 204px;
+      margin-top: 77.51px;
+   }
+   
+   .download__title{
+      font-size: 24px;
+      line-height: 28px;
+      padding: 16px 0;
+   }
+   
+   .download__text{
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 4.71px;
+   }
+   
+   .download__button{
+      font-size: 18px;
+      line-height: 21px;
+      width: 313.15px;
+      margin-top: 45.71px;
+   }
+}
+
+@media (max-width: 1024px){
+   #download{
+      width: 280px;
+      margin-top: 34.51px;
+   }
+   
+   .download__title{
+      font-size: 18px;
+      line-height: 21px;
+      padding: 19px 0;
+   }
+   
+   .download__text{
+      font-size: 13px;
+      line-height: 15px;
+      margin-top: 3px;
+   }
+   
+   .download__button{
+      width: 279px;
+      margin-top: 11px;
+      height: 80px;
+      margin-left: 0;
+   }
+}

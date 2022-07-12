@@ -1,0 +1,395 @@
+@import url(./general.scss);
+
+#works{
+   width: 1510px;
+   height: 678px;
+   margin: 133.57px auto 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+}
+
+.works__child{
+   border: 1px solid #FFFFFF;
+   position: relative;
+}
+
+.one{
+      background: url(/images/work_1.png);
+
+   &:hover .works__info{
+      opacity: 1;
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_1.png);
+   
+      }
+
+   &:active .works__info{
+   opacity: 1;
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_1.png);
+   }
+}
+
+   .two{
+      background: url(/images/work_2.png);
+
+      &:hover .works__info{
+         opacity: 1;
+         background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_2.png);
+         }
+   
+      &:active .works__info{
+         opacity: 1;
+         background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_2.png);
+      }
+   }
+
+   .three{
+      background: url(/images/work_3.png);
+
+      &:hover .works__info{
+         opacity: 1;
+         background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_3.png);
+         }
+   
+      &:active .works__info{
+      opacity: 1;
+      background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_3.png);
+      }
+   }
+
+   .four{
+      background: url(/images/work_4.png);
+
+      &:hover .works__info{
+         opacity: 1;
+         background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_4.png);
+         }
+   
+      &:active .works__info{
+      opacity: 1;
+      background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_4.png);
+      }
+   }
+
+   .five{
+      background: url(/images/work_5.png);
+
+      &:hover .works__info{
+         opacity: 1;
+         background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_5.png);
+         }
+   
+      &:active .works__info{
+      opacity: 1;
+      background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_5.png);
+      }
+   }
+
+   .six{
+      background: url(/images/work_6.png);
+
+      &:hover .works__info{
+         opacity: 1;
+         background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_6.png);
+         }
+   
+      &:active .works__info{
+      opacity: 1;
+      background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_6.png);
+      }
+   }
+
+   .seven{
+      background: url(/images/work_7.png);
+
+      &:hover .works__info{
+         opacity: 1;
+         background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_7.png);
+         }
+   
+      &:active .works__info{
+      opacity: 1;
+      background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_7.png);
+      }
+   }
+
+   .eight{
+      background: url(/images/work_8.png);
+
+      &:hover .works__info{
+         opacity: 1;
+         background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_8.png);
+         }
+   
+      &:active .works__info{
+      opacity: 1;
+      background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_8.png);
+      }
+   }
+
+.works__info{
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   position: absolute;
+   transition: 2s ease-in-out;
+}
+.works__info-title{
+   font-family: "Raleway",sans-serif;
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 28px;
+   text-align: center;
+   color: #FFFFFF;
+   padding: 16px 0;
+   margin-top: 110px;
+}
+
+.works__info-description{
+   font-family: "Raleway", sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   color: #FFFFFF;
+   margin-top: 20.57px;
+}
+
+@media (max-width: 1500px){
+   #works{
+      width: 1024px;
+      height: 459.78px;
+      margin-top: 80.11px;
+   }
+
+   .works__info-title{
+      font-size: 18px;
+      line-height: 21px;
+      padding: 9.85px 0;
+      margin-top: 74.6px;
+   }
+   
+   .works__info-description{
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 12.81px;
+   }
+
+   .one{
+      background: url(/images/work_1_tablet.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_1_tablet.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_1_tablet.png);
+   }
+}
+
+.two{
+   background: url(/images/work_2_tablet.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_2_tablet.png);
+      }
+
+   &:active .works__info{
+      background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_2_tablet.png);
+   }
+}
+
+.three{
+   background: url(/images/work_3_tablet.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_3_tablet.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_3_tablet.png);
+   }
+}
+
+.four{
+   background: url(/images/work_4_tablet.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_4_tablet.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_4_tablet.png);
+   }
+}
+
+.five{
+   background: url(/images/work_5_tablet.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_5_tablet.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_5_tablet.png);
+   }
+}
+
+.six{
+   background: url(/images/work_6_tablet.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_6_tablet.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_6_tablet.png);
+   }
+}
+
+.seven{
+   background: url(/images/work_7_tablet.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_7_tablet.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_7_tablet.png);
+   }
+}
+
+.eight{
+   background: url(/images/work_8_tablet.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_8_tablet.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_8_tablet.png);
+   }
+}
+
+}
+
+@media (max-width: 1024px){
+   #works{
+      width: 320px;
+      height: 576px;
+      margin-top: 34.85px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+   }
+
+   .works__info-title{
+      font-size: 18px;
+      line-height: 21px;
+      padding: 2.21px 0;
+      margin-top: 46.59px;
+   }
+   
+   .works__info-description{
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 4.63px;
+   }
+
+   .one{
+      background: url(/images/work_1_phone.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_1_phone.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_1_phone.png);
+   }
+}
+
+.two{
+   background: url(/images/work_2_phone.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_2_phone.png);
+      }
+
+   &:active .works__info{
+      background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_2_phone.png);
+   }
+}
+
+.three{
+   background: url(/images/work_3_phone.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_3_phone.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_3_phone.png);
+   }
+}
+
+.four{
+   background: url(/images/work_4_phone.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_4_phone.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_4_phone.png);
+   }
+}
+
+.five{
+   background: url(/images/work_5_phone.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_5_phone.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_5_phone.png);
+   }
+}
+
+.six{
+   background: url(/images/work_6_phone.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_6_phone.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_6_phone.png);
+   }
+}
+
+.seven{
+   background: url(/images/work_7_phone.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_7_phone.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_7_phone.png);
+   }
+}
+
+.eight{
+   background: url(/images/work_8_phone.png);
+
+   &:hover .works__info{
+      background: linear-gradient(to top, rgba(255, 67, 67, 0.8), rgba(255, 67, 67, 0.8)), url(/images/work_8_phone.png);
+      }
+
+   &:active .works__info{
+   background: linear-gradient(to top, rgba(185, 12, 12, 0.8), rgba(185, 12, 12, 0.8)), url(/images/work_8_phone.png);
+   }
+}
+}

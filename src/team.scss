@@ -1,0 +1,183 @@
+@import url(./general.scss);
+
+#team {
+   width: 1170px;
+   height: 619px;
+   margin: 114px auto 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   column-gap: 30px;
+}
+
+.team__image{
+   width: 270px;
+   height: 270px;
+}
+
+.card-1{
+   background: url(/images/card_1.png);
+}
+
+.card-2{
+   background: url(/images/card_2.png);
+}
+
+.card-3{
+   background: url(/images/card_3.png);
+}
+
+.card-4{
+   background: url(/images/card_4.png);
+}
+
+.team__name{
+   font-family: "Raleway",sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 28px;
+   color: #2D3033;
+   margin-top: 30px;
+   padding: 1px 0;
+}
+
+.team__position{
+   font-family: "Raleway", sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   color: #FF4343;
+   margin-top: 5.29px;
+}
+
+.team__text{
+   font-family: "Raleway",sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   color: #6C7279;
+   margin-top: 17.86px;
+}
+
+.team__media{
+   margin-top: 37.84px;
+   width: 130px;
+   height: 39px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.team__media-icon{
+   width: 39px;
+   height: 39px;
+}
+
+
+@media (max-width: 1500px){
+   #team {
+      width: 984.08px;
+      margin-top: 78.22px;
+      column-gap: 25.23px;
+   }
+
+   .team__image{
+      width: 227.08px;
+      height: 227.08px;
+   }
+
+   .card-1{
+      background: url(/images/card_1_tablet.png);
+   }
+
+   .card-2{
+      background: url(/images/card_2_tablet.png);
+   }
+
+   .card-3{
+      background: url(/images/card_3_tablet.png);
+   }
+
+   .card-4{
+      background: url(/images/card_4_tablet.png);
+   }
+
+   .team__name{
+      font-size: 18px;
+      line-height: 21px;
+      margin-top: 25.23px;
+      padding: 2.12px 0;
+   }
+   
+   .team__position{
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 4.6px;
+   }
+   
+   .team__text{
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 22.45px;
+   }
+
+   .team__media{
+      margin-top: 39.2px;
+      width: 108.5px;
+      height: 32.8px;
+   }
+
+   .team__media-icon{
+      width: 32.8px;
+      height: 32.8px;
+   }
+}
+
+@media (max-width: 1024px){
+   #team {
+      width: 280px;
+      height: 2252px;
+      margin-top: 35px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+   }
+
+   .team__image{
+      width: 280px;
+      height: 227.25px;
+   }
+
+   .card-1{
+      background: url(/images/card_1_phone.png);
+   }
+
+   .card-2{
+      background: url(/images/card_2_phone.png);
+   }
+
+   .card-3{
+      background: url(/images/card_3_phone.png);
+   }
+
+   .card-4{
+      background: url(/images/card_4_phone.png);
+   }
+
+   .team__text{
+      margin-top: 38.49px;
+   }
+
+   .team__media{
+      margin-top: 55.15px;
+      width: 131px;
+      height: 39.61px;
+   }
+
+   .team__media-icon{
+      width: 39.61px;
+      height: 39.61px;
+   }
+}

@@ -1,0 +1,293 @@
+@import url(./general.scss);
+
+.banner{
+   background: linear-gradient(to top, rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)), url(/images/background_main.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.banner-section{
+   width: 1510px;
+   height: 747px;
+   margin: 0 auto;
+}
+
+.banner__header{
+   width: 1170px;
+   height: 100.95px;
+   border-bottom: 1px solid #BABBC5;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+.banner__header-menu{
+   width: 670px;
+   height: 63px;
+   display: flex;
+   margin-top: 36px;
+}
+
+.menu__tab{
+   width: 134px;
+   height: 63px;
+   list-style: none;
+   text-align: center;
+}
+
+.menu__tab:hover{
+   border-bottom: 3px solid #BABBC5;
+}
+
+.menu__tab:active{
+   border-bottom: 3px solid #E71414;
+}
+
+.menu-link{
+   font-family: "Raleway",sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 15px;
+   text-align: center;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+
+.menu-link:active{
+   color: #E71414;
+}
+
+.banner__title{
+   font-family: "Raleway",sans-serif;
+   font-style: normal;
+   font-weight: 900;
+   font-size: 64px;
+   line-height: 75px;
+   text-align: center;
+   color: #FFFFFF;
+   margin-top: 130px;
+}
+
+.banner__text{
+   font-family: "Raleway", sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 28px;
+   text-align: center;
+   color: #FFFFFF;
+   margin-top: 31.43px;
+}
+
+.banner__button{
+   font-family: "Raleway", sans-serif;
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 28px;
+   text-align: center;
+   color: #FFFFFF;
+   width: 369px;
+   height: 77.58px;
+   background-color: rgba(255, 67, 67, 1);
+   border: none;
+   margin-top: 79.57px;
+   margin-left: 37.75%;
+}
+
+.banner__button:hover{
+   background-color: rgba(231, 20, 20, 1);
+   transition: all 1s ease 0s;
+}
+
+.banner__button:active{
+   background-color: #FF4343;
+   box-shadow: 4px 4px 30px #FF4343;
+   transition-duration: 0.1s;
+}
+
+#hamburger-menu{
+   opacity: 0;
+}
+
+.hamburger-menu__btn{
+   display: flex;
+   position: relative;
+   top: 10px;
+   right: 33%;
+   width: 24px;
+   height: 18px;
+   cursor: pointer;
+   z-index: 16;
+}
+
+.hamburger-menu__btn> span,
+.hamburger-menu__btn> span::before,
+.hamburger-menu__btn> span::after {
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 3px;
+   background-color: #FFFFFF;
+}
+
+.hamburger-menu__btn > span::before {
+   content: '';
+   top: -8px;
+}
+
+.hamburger-menu__btn > span::after {
+   content: '';
+   top: 8px;
+}
+
+.hamburger-menu__box{
+   display: block;
+   position: fixed;
+   visibility: hidden;
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 574px;
+   margin: 0;
+   padding: 80px 0;
+   list-style: none;
+   text-align: center;
+   background: linear-gradient(to top, rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)), url(/images/background_main__phone.png);
+background-repeat: no-repeat;
+background-size: cover;
+z-index: 15;
+}
+
+.hamburger-menu__item{
+   display: block;
+   padding: 24px 0;
+   width: 280px;
+   height: 63px;
+   font-family: "Raleway", sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 15px;
+   color: #FFFFFF;
+   text-decoration: none;
+   text-align: left;
+   margin-left: 20px;
+}
+
+.banner__hamburger-logo{
+   width: 130px;
+   height: 56.28px;
+   margin-left: 20px;
+   position: fixed;
+   top: 10px;
+   left: 0px;
+}
+
+#hamburger-menu:checked~.hamburger-menu__btn>span{
+   transform: rotate(45deg);
+}
+
+#hamburger-menu:checked~.hamburger-menu__btn>span::before{
+   top: 0;
+   transform: rotate(0);
+}
+
+#hamburger-menu:checked~.hamburger-menu__btn>span::after {
+   top: 0;
+   transform: rotate(90deg);
+}
+
+#hamburger-menu:checked ~ .hamburger-menu__box{
+   visibility: visible;
+   left: 0;
+}
+
+
+.banner__hamburger-menu{
+   display: none;
+}
+
+@media (max-width: 1500px){
+
+   .banner-section{
+      width: 1024px;
+      height: 768px;
+   }
+   
+   .banner__header{
+      width: 1024px;
+      height: 100px;
+   }
+   
+   .banner__header-menu{
+      width: 566px;
+   }
+   
+   .menu__tab{
+      width: 112px;
+      height: 60px;
+   }
+
+   .menu-link{
+      font-size: 12px;
+      line-height: 14px;
+   }
+   
+   .banner__title{
+      font-size: 48px;
+      line-height: 56px;
+      margin-top: 157px;
+   }
+   
+   .banner__text{
+      font-size: 18px;
+      line-height: 21px;
+      margin-top: 61.86px;
+   }
+   
+   .banner__button{
+      width: 313.15px;
+      margin-top: 91.57px;
+   }
+}
+
+@media (max-width: 1024px){
+   .banner-section{
+      width: 320px;
+      height: 574px;
+   }
+   
+   .banner__header{
+      width: 280px;
+      height: 56.28px;
+      border-bottom: none;
+   }
+   
+   .banner__header-menu{
+      display: none;
+   }
+
+   .banner__title{
+      font-size: 36px;
+      line-height: 42px;
+      margin-top: 49.72px;
+   }
+   
+   .banner__text{
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 32.71px;
+   }
+   
+   .banner__button{
+      width: 280px;
+      height: 60px;
+      margin: 49.29px 6.25%;
+   }
+
+   .banner__hamburger-menu{
+      display: block;
+   }
+}
